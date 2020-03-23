@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec npm run babel-node -- ./lib/index.js",
-    "clean": "rm -rf build && mkdir dist",
+    "clean": "rm -rf dist && mkdir dist",
     "build-babel": "babel -d ./dist ./src -s --copy-files",
     "build": "npm run clean && npm run build-babel",
     "start-production": "NODE_ENV=production node -r dotenv/config ./dist/index.js",
