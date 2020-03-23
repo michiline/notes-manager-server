@@ -3,7 +3,7 @@
         {
             "name": "notes-manager-server",
             "script": "npm",
-            "args" : "run build && serve"
+            "args" : "run run-production"
         }
     ]
 }
