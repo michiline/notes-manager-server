@@ -1,0 +1,31 @@
+{
+  "name": "notes-manager-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec npm run babel-node -- ./lib/index.js",
+    "clean": "rm -rf build && mkdir dist",
+    "build-babel": "babel -d ./dist ./src -s --copy-files",
+    "build": "npm run clean && npm run build-babel",
+    "start-production": "NODE_ENV=production node -r dotenv/config ./dist/index.js",
+    "run-production": "npm run build && npm run start-production",
+    "babel-node": "babel-node"
+  },
+  "author": "equidistant",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "7.8.7",
+    "body-parser": "1.19.0",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "mongoose": "5.9.4",
+    "nodemon": "2.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.7",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.8.7"
+  }
+}
