@@ -3,14 +3,14 @@
 Server used by notes manager app.<br>
 Built with NodeJS, Express and MongoDB.
 
-### Live preview
+### Live Preview
 
-n/a
+www.notes.mislav.host
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Default is [http://localhost:3002](http://localhost:3002) to view it in the browser.<br>
+Runs server in development mode.<br>
+Default is [http://localhost:3000](http://localhost:3000).<br>
 Change PORT in .env file.
 
 ### `npm run-production`
